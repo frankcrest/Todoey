@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Todo{
+class Todo: Encodable, Decodable{
+    //can also write Codable to conform to both classes
     var title : String = ""
     var done : Bool = false
 }
